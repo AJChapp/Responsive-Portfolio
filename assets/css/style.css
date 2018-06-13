@@ -1,0 +1,278 @@
+    body{
+        background-color: black;
+        color: #7B7C7C;
+        background-image: url(../images/country-quilt/country-quilt.png);
+    }
+
+    /* Nav Bar */
+    #nav{
+        width: 100%;
+        position: fixed;
+        margin: 0%;
+        height: 75px;
+        position: fixed;
+        background-color: white;
+        border-style: solid;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        border-width: 1px;
+    }
+
+    /* add to the non-floated element */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #head {
+    
+        background-color: #4AAAA5;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 0px 4px 0px 4px;
+        margin: 0%;
+        position: absolute;
+        left: 100px;
+        bottom: 0px;
+        border-radius: 12px 12px 0 0;
+        /* min-width: 234.14px;     */
+    }
+
+    
+    
+    a{
+        text-decoration: none;
+    }
+    
+    a:link {
+        color: #666666;
+    }
+    
+    a:visited {
+        color: #666666;
+    }
+    
+    a:hover{
+        color: black;
+    }
+    
+    #div_nav{
+        /* float: right; */
+        position: absolute;
+        bottom: 0px;
+        right: 100px;
+    }
+    
+    .div_nav_link{
+        display: inline-block;
+        font-weight: bold;
+        border-color: white;
+        border-right-color: #666666;
+        border-style: solid;
+        border-width: 1px; 
+        border-bottom: 0px;
+        padding-right: 5px;
+    }
+    
+    @media screen and (max-width: 624px) {
+        #head {
+            display: none;
+        }
+        #div_nav{
+            bottom: 0px;
+            right: auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+    }
+    @media screen and (max-width: 202px) {
+        #div_nav {
+            min-width: 202px;
+        }
+    }
+
+    #contact_nav{
+        border-width: 0px;
+        padding-left: 1px;
+    }
+    
+    /* About me */
+    #bio{
+        position: relative;
+        top: 125px;
+        width: 100%;
+        display: inline-block;
+        margin: auto;
+    }
+
+    #bio_head{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+
+    #bio_head_text{
+        margin: auto;
+        background-color: white;
+        max-width: 960px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #4AAAA5;
+    }
+
+    #bio_text{
+        max-width: 960px;
+        margin: auto;
+        border-top-style: solid;
+        border-top-width: 2px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+    }
+
+    #profile_pic{
+        float: left;    
+        margin-right: 3px;
+        margin-bottom: 1px;
+    }
+
+    /* Portfolio */
+    #port{
+        position: relative;
+        top: 125px;
+        width: 100%;
+        display: inline-block;
+        margin: auto;
+    }
+
+    #port_head{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #port_head_text{
+        margin: auto;
+        background-color: white;
+        max-width: 960px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #4AAAA5
+    }
+
+    #port_content{
+        max-width: 960px;
+        margin: auto;
+        border-top-style: solid;
+        border-top-width: 2px;
+        background-color: white;
+    }
+
+    /* images in .game must have be 200x200 */
+    .game{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin: 5px;
+        float: left;
+    }
+
+    .game_banner{
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        left: 0px;  
+        margin: 0;
+        background-color: #4AAAA5;
+    }
+
+    
+    .banner_text{
+        text-align: center;
+        margin: auto;
+        color: black;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-family: sans-serif;
+    }
+
+/* Contact */
+
+#contact{
+    position: relative;
+    top: 125px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    
+}
+
+#contact_head{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+#contact_head_text{
+    margin: auto;
+    background-color: white;
+    max-width: 960px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #4AAAA5
+}
+
+#contact_content{
+    max-width: 960px;
+    margin: auto;
+    border-top-style: solid;
+    border-top-width: 2px;
+    background-color: white;
+}
+
+#name_email{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#submit_button{
+    background-color: #4AAAA5;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    height: 42px;
+    width: 125px;
+    color: white;
+}
+
+/* Footer */
+    #footer{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: black;
+        border-top: 4px solid #4AAAA5;
+    }
+
+    #footer_text{
+        text-align: center;
+        font-size: 10px;
+    }
